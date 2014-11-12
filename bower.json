@@ -1,0 +1,27 @@
+{
+  "name": "angular-fir",
+  "version": "0.1.0",
+  "description": "a fir.im SDK based on angular.js",
+  "authors": [
+    "Guo Yu <o.u.turing@gmail.com>"
+  ],
+  "main": "dist/fir.min.js",
+  "keywords": [
+    "fir.im",
+    "fir"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/turingou/angular-fir",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "example",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.2.23",
+    "angular-resource": "~1.2.23"
+  }
+}

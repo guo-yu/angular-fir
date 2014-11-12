@@ -1,0 +1,33 @@
+{
+  "name": "angular-fir",
+  "version": "0.1.0",
+  "description": "a fir.im SDK based on angular.js",
+  "main": "dist/fir.min.js",
+  "scripts": {
+    "serve": "node_modules/.bin/serve .",
+    "watch": "node_modules/.bin/rewatch src/*.js -c 'npm run build'",
+    "build": "node_modules/.bin/uglifyjs src/fir.js --mangle --compress -o dist/fir.min.js --source-map dist/fir.min.js.map --source-map-url fir.min.js.map --source-map-root ../src/fir.js",
+    "dev": "npm run serve & npm run watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:turingou/angular-fir.git"
+  },
+  "keywords": [
+    "angular",
+    "fir",
+    "fir.im",
+    "testflight"
+  ],
+  "author": "turing <o.u.turing@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/turingou/angular-fir/issues"
+  },
+  "homepage": "https://github.com/turingou/angular-fir",
+  "devDependencies": {
+    "serve": "~1.4.0",
+    "uglify-js": "^2.4.15",
+    "rewatch": "~0.2.2"
+  }
+}
